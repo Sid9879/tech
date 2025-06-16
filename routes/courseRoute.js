@@ -1,6 +1,6 @@
 const express = require('express');
-const { authMiddleware, isAdmin } = require('../../../TechBin/server/middleware/token');
 const { register, getallCourse, updateCourse, getCourseById, deleteCourse, filterJob } = require('../controllers/courseController');
+const { authMiddleware, isAdmin } = require('../middleware/authMiddleware');
 const router = express.Router();
 
 
